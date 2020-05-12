@@ -149,9 +149,8 @@ def like_posts():
     sleep(14)
     posts = browser.find_elements_by_xpath("//section/main/section/div[1]/div[2]/div")
     for post in posts:
-        for i in post.find_elements_by_xpath("//section/main/section/div/div[2]/div/article[3]/div[2]/section[1]/span[1]/button/svg/path"):
-            i.click()
-
+        post.find_element_by_xpath("//section/main/section/div/div[2]/div/article[1]/div[2]/section[1]/span[1]/button").click()
+        sleep(3)
 
 registration()
 login_check()
