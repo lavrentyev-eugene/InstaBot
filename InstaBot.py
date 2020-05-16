@@ -15,7 +15,7 @@ SUB_PERIOD = config.sub_period
 SUB_LIMIT = config.sub_limit
 LIKES_LIMIT = config.likes_limit
 POST_TIME = timedelta(minutes=config.post_time)
-CHECK_SUB = config.CHECK_SUB
+CHECK_SUB = config.check_sub
 
 # Выбор браузера
 browser = webdriver.Chrome()
